@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solapur to Murudeshwar Trip</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #8F43EE;
+            /*F273E6 F99417 FAFF00 7AD9F5 EA21A2*/
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 20px;
+            transition: transform 0.2s;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: scale(1.02);
+        }
+
+        .thumbnail {
+            width: 100%;
+            border-radius: 12px;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .details {
+            display: none;
+            margin-top: 15px;
+        }
+
+        .plan-title {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        .description {
+            margin-top: 5px;
+        }
+
+        .map-section,
+        .budget-section,
+        .stay-section {
+            background: white;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+            border-radius: 12px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4e73df;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .thumbnail {
+                height: 185px;
+            }
+
+            iframe {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Solapur to Murudeshwar Trip Plan</h1>
+        <p>Explore Gokarna & Murudeshwar</p>
+    </header>
+
+    <div class="card" onclick="toggleDetails(this)">
+        <img src="travel.jpg" class="thumbnail" alt="Akluj Waterpark">
+        <div class="plan-title">Day 1: Night Travel</div>
+        <div class="description">Start your journey at night.</div>
+        <div class="details">
+            <ul>
+                <li>Solapur → Hubbali (~370 km)</li>
+                <li>Take a break</li>
+                <li>Restart the travel to Gokarna</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="card" onclick="toggleDetails(this)">
+        <img src="gokarna.png" class="thumbnail" alt="Kas Plateau">
+        <div class="plan-title">Day 2: Reach Gokarna</div>
+        <div class="description">Visit the temple, beach etc</div>
+        <div class="details">
+            <ul>
+                <li>Visit the temple</li>
+                <li>Beach Sport Activity</li>
+                <li>Stay at local hotel</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="card" onclick="toggleDetails(this)">
+        <img src="murudeshwar.jpg" class="thumbnail" alt="Mahabaleshwar Viewpoint">
+        <div class="plan-title">Day 3: Head towards Murudeshwar</div>
+        <div class="description">Spritiual Visit to Mahadev Temple</div>
+        <div class="details">
+            <ul>
+                <li>Visit the Temple</li>
+                <li>Have fun at beach side</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="card" onclick="toggleDetails(this)">
+        <img src="solapur.jpg" class="thumbnail" alt="Return Journey">
+        <div class="plan-title">Day 4: Return to Solapur</div>
+        <div class="description">Start early and return home with unforgettable memories.</div>
+        <!-- <button id="toggleDetails" class="toggle-btn">
+            <span id="toggleIcon">▼</span> Show Travel Map & Plan
+        </button> -->
+        <div class="details">
+            <ul>
+                <li>Murudeshwar → Solapur (~550 km)</li>
+                <li>Breaks for meals & rest recommended</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="map-section">
+        <h2>🗺️ Trip Route</h2>
+        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m40!1m12!1m3!1d1952815.4521994162!2d73.26840368202868!3d17.06811871461533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m25!3e0!4m5!1s0x3bc5d082b54ac5d5%3A0x3c719de6c83710d0!2sSolapur%2C%20Maharashtra!3m2!1d17.6599188!2d75.9063906!4m5!1s0x3bc1000cdec07a29%3A0xece8ea642952e42f!2sKolhapur%2C%20Maharashtra!3m2!1d16.7049873!2d74.2432527!4m5!1s0x3bea86e3356bd8c7%3A0x9438c2015cc70be1!2sVijaydurg%2C%20Maharashtra!3m2!1d16.5518794!2d73.3353863!4m5!1s0x3bea055561b27b67%3A0xc0450524831ec163!2sGanpatipule%2C%20Maharashtra!3m2!1d17.148866299999998!2d73.2726946!5e0!3m2!1sen!2sin!4v1745150930787!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m40!1m12!1m3!1d3929928.452182154!2d72.4653289778583!3d15.866015442688681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m25!3e0!4m5!1s0x3bc5d082b54ac5d5%3A0x3c719de6c83710d0!2sSolapur%2C%20Maharashtra!3m2!1d17.6599188!2d75.9063906!4m5!1s0x3bb8d6d3a2090b17%3A0xae803e207113397!2sHubballi%2C%20Karnataka!3m2!1d15.364708299999998!2d75.1239547!4m5!1s0x3bbe83d65b0a4c71%3A0xe9e09fd076bb41c0!2sGokarna%2C%20Karnataka!3m2!1d14.5478586!2d74.31884099999999!4m5!1s0x3bbc46d192e0edad%3A0x87c516bd6653efe1!2sMurdeshwar%2C%20Karnataka!3m2!1d14.093993!2d74.4898633!5e0!3m2!1sen!2sin!4v1745160288329!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p>*Note: Zoom & interact with map to view step-by-step route.*</p>
+    </div>
+
+    <div class="budget-section">
+        <h2>💰 Budget Breakdown (Approx. per person)</h2>
+        <small>*considering 10 peoples are going</p>
+            <table>
+                <tr>
+                    <th>Category</th>
+                    <th>Amount (₹)</th>
+                </tr>
+                <tr>
+                    <td>Distance expected</td>
+                    <td>1150km</td>
+                </tr>
+                <tr>
+                    <td>Fuel/Transport</td>
+                    <td>2200-2400</td>
+                </tr>
+                <tr>
+                    <td>Accommodation (2 nights)</td>
+                    <td>1000</td>
+                </tr>
+                <tr>
+                    <td>Food</td>
+                    <td>1200-1500</td>
+                </tr>
+                <tr>
+                    <td>Activities</td>
+                    <td>600–800</td>
+                </tr>
+                <tr>
+                    <th>Total</th>
+                    <th>₹5,400 – ₹5,800</th>
+                </tr>
+            </table>
+    </div>
+
+    <!-- <div class="stay-section">
+        <h2>🏨 Suggested Stay Options</h2>
+        <ul>
+            <li><strong>Vijaydurg:</strong>  Sagar Darshan Niwas, Gokul Sagar Niwas</li>
+            <li><strong>Ganpatipule:</strong> Hotel Heramb</li>
+        </ul>
+    </div> -->
+
+    <script>
+        function toggleDetails(card) {
+            const detailBox = card.querySelector('.details');
+            detailBox.style.display = detailBox.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+
+</html>
