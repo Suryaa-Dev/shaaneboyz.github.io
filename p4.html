@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solapur to Konkan Adventure</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Solapur to Konkan Adventure Trip</h1>
+        <p>Explore Kunkeshwar, Vijaydurg & Chandoli National Park</p>
+    </header>
+
+    <div class="card" onclick="toggleDetails(this)">
+        <img src="kunkeshwar.jpg" class="thumbnail" alt="Kunkeshwar Beach">
+        <div class="plan-title">Day 1: Kunkeshwar Beach</div>
+        <div class="description">Relax at the peaceful Kunkeshwar Beach and explore the famous Kunkeshwar Temple.</div>
+        <button class="toggle-btn" onclick="toggleDetails(this)">Show More</button>
+        <div class="details">
+            <ul>
+                <li>Solapur → Kunkeshwar (~390 km)</li>
+                <li>Visit Kunkeshwar Temple</li>
+                <li>Evening Beach Walk & Sunset</li>
+                <li>Overnight Stay at nearby Resort</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="card" onclick="toggleDetails(this)">
+        <img src="vijay.jpg" class="thumbnail" alt="Vijaydurg Fort">
+        <div class="plan-title">Day 2: Vijaydurg Fort Exploration</div>
+        <div class="description">Historic fort by the sea with rich Maratha legacy and scenic coastal views.</div>
+        <button class="toggle-btn" onclick="toggleDetails(this)">Show More</button>
+        <div class="details">
+            <ul>
+                <li>Kunkeshwar → Vijaydurg (~40 km)</li>
+                <li>Explore Vijaydurg Fort (Entry Fee Applicable)</li>
+                <li>Photography & Guided Tour</li>
+                <li>Local Seafood Lunch</li>
+                <li>Return to Stay / Travel towards Chandoli</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="card" onclick="toggleDetails(this)">
+        <img src="park.jpg" class="thumbnail" alt="Chandoli National Park">
+        <div class="plan-title">Day 3: Chandoli National Park</div>
+        <div class="description">Enjoy jungle safari, wildlife photography and nature trails in Chandoli.</div>
+        <button class="toggle-btn" onclick="toggleDetails(this)">Show More</button>
+        <div class="details">
+            <ul>
+                <li>Vijaydurg → Chandoli (~150 km)</li>
+                <li>Safari Timings: 6:00 AM – 11:00 AM / 3:00 PM – 6:00 PM</li>
+                <li>Trekking options available</li>
+                <li>Stay in Eco-resort or Forest Rest House</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="card" onclick="toggleDetails(this)">
+        <img src="solapur.jpg" class="thumbnail" alt="Return Journey">
+        <div class="plan-title">Day 4: Return to Solapur</div>
+        <div class="description">Begin the journey back to Solapur filled with nature and history memories.</div>
+        <button class="toggle-btn" onclick="toggleDetails(this)">Show More</button>
+        <div class="details">
+            <ul>
+                <li>Chandoli → Solapur (~320 km)</li>
+                <li>Estimated Time: 7–8 hrs</li>
+                <li>Take halts for refreshment</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="map-section">
+        <h2>🗺️ Trip Route</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m40!1m12!1m3!1d973003.2859012493!2d73.71950193837793!3d17.520284049833105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m25!3e0!4m5!1s0x3bc5d082b54ac5d5%3A0x3c719de6c83710d0!2sSolapur%2C%20Maharashtra!3m2!1d17.6599188!2d75.9063906!4m5!1s0x3bcbd82f259211e7%3A0x80f2e2fa6d9dbbe2!2sKunkeshwar%20Beach!3m2!1d16.3881092!2d73.4032889!4m5!1s0x3bcbd6e95d97d28b%3A0x682938aa9c4c230b!2sVijaydurg%20Fort!3m2!1d16.5685776!2d73.3364029!4m5!1s0x3bc2539c90a02ad7%3A0x853d6dcabcce3e13!2sChandoli%20National%20Park!3m2!1d17.1033871!2d73.8587082!5e0!3m2!1sen!2sin!4v1713618305084!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p>*Note: Zoom & interact with the map to view the detailed route.*</p>
+    </div>
+
+    <div class="budget-section">
+        <h2>💰 Budget Breakdown (Approx. per person)</h2>
+        <small>*considering 10 people are going</small>
+        <table>
+            <tr>
+                <th>Category</th>
+                <th>Amount (₹)</th>
+            </tr>
+            <tr>
+                <td>Distance expected</td>
+                <td>900 km</td>
+            </tr>
+            <tr>
+                <td>Fuel/Transport</td>
+                <td>1700–1900</td>
+            </tr>
+            <tr>
+                <td>Accommodation (3 nights)</td>
+                <td>1200</td>
+            </tr>
+            <tr>
+                <td>Food</td>
+                <td>1500–1800</td>
+            </tr>
+            <tr>
+                <td>Safari & Entry Fees</td>
+                <td>700</td>
+            </tr>
+            <tr>
+                <td>Activities & Misc.</td>
+                <td>400–600</td>
+            </tr>
+            <tr>
+                <th>Total</th>
+                <th>₹5,500 – ₹6,200</th>
+            </tr>
+        </table>
+    </div>
+
+    <div class="stay-section">
+        <h2>🏨 Suggested Stay Options</h2>
+        <ul>
+            <li><strong>Kunkeshwar:</strong> MTDC Beach Resort, Samudra Beach Stay</li>
+            <li><strong>Vijaydurg:</strong> Hotel Prabhukrupa, Local homestays</li>
+            <li><strong>Chandoli:</strong> Forest Rest House, Jungle Resorts</li>
+        </ul>
+    </div>
+
+    <script>
+        function toggleDetails(card) {
+            const detailBox = card.querySelector('.details');
+            detailBox.style.display = detailBox.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+
+</html>
